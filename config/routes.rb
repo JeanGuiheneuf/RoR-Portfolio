@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :portfolios
   get 'pagestest/randomito'
   get 'page/random'
   get 'pages/home'
