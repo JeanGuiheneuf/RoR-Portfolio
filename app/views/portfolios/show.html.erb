@@ -1,6 +1,13 @@
 <%= image_tag @portfolio_item.main_image unless @portfolio_item.main_image.nil?%>
 <h1><%= @portfolio_item.title %></h1>
-<em><%= @portfolio_item.subtitile %></em>
+<em><%= @portfolio_item.subtitle %></em>
 <p><%= @portfolio_item.body %></p>
+
+<h3> Related Technologies</h3>
+
+<% @portfolio_item.technologies.each do |t| %>
+
+<p><%= t.name %></p>
+<% end %>
 
 <p><%= link_to 'Delete item', portfolio_path, method: :delete, data: { confirm: 'Are you sure?' } %></p>
