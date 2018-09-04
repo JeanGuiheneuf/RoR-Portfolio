@@ -1,5 +1,9 @@
-<h1>HomePage</h1>
+<%= link_to 'edit profile',edit_user_registration_path %>
+
+
+<h1>Hi <%= current_user.first_name if current_user %> !</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
 
 <h2>Blog posts</h2>
 <hr>
