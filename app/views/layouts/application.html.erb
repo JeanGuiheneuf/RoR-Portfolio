@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RoRPortfolio</title>
+    <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -19,6 +19,14 @@
       <p></p>
       <%= link_to 'sign up', new_user_registration_path %>
     <% end %>
+
+    <div>
+      <div><%= link_to "home", root_path %></div>
+      <div><%= link_to "about me", about_path %></div>
+      <div><%= link_to "contact me", contact_path %></div>
+      <div><%= link_to "Blogs", blogs_path %></div>
+      <div><%= link_to "Portfolio", portfolios_path %></div>
+    </div>
 
 
     
