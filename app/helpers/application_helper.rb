@@ -16,8 +16,10 @@ module ApplicationHelper
 		if session[:source]
 		greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
       	content_tag( :div, greeting, class: "source-class")
-    end
+    	end
+	end
 
-
+	def copyright_renderer
+		GuiheneufViewTool::Renderer.copyright 'Jean Guiheneuf', 'All right reserved'
 	end
 end
