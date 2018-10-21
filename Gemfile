@@ -59,3 +59,5 @@ gem 'devise', '~> 4.2'
 
 gem 'bootstrap', '~> 4.1.3'
 gem 'guiheneuf_view_tool', git:'https://github.com/JeanGuiheneuf/guiheneuf_view_tool'
+
+gem 'petergate', '~> 1.9', '>= 1.9.1'
