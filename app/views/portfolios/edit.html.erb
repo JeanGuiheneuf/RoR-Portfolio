@@ -1,4 +1,4 @@
 
 <h1>Edit Portfolio Item</h1>
 
-<%= render 'form', portfolio: @portfolio_item %>
+<%= render 'form', portfolio: @portfolio_item if logged_in?(:site_admin)%>

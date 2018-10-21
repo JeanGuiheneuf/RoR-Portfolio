@@ -10,4 +10,4 @@
 <p><%= t.name %></p>
 <% end %>
 
-<p><%= link_to 'Delete item', portfolio_path, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+<p><%= link_to 'Delete item', portfolio_path, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin)%></p>
